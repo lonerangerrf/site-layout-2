@@ -1,3 +1,45 @@
+@media screen {
+    
+}
+
 body {
-    background-color: rgba(59, 24, 30, 1);
+  background-color: rgba(59, 24, 30, 1);
+  margin: 0 auto;
+  width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 20px 30px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__slogan {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.burger {
+  display: flex; 
+  justify-content: center
+}
+
+.btn-hidden {
+  overflow: hidden;
+  background-color: rgba(59, 24, 30, 1);
+  border: none;
+}
+
+.floristics {
+  padding: 145px 40px 40px 40px;
+  background: url(img/flowers.jpg)
 }
