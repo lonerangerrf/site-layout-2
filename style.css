@@ -2,14 +2,22 @@
     
 }
 
+
+
 body {
   background-color: rgba(59, 24, 30, 1);
   margin: 0 auto;
   width: 320px;
+  font-family: 'Forum', cursive;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style-type: none;  /* почему точки из списка убираются именно так?, вроде бы они удирались через text-decoration: none;*/
 }
 
 .header {
@@ -33,6 +41,17 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center
 }
 
+.floristics__title {
+  font-family: 'Playfair Display', serif;
+  line-height: 42px;
+  text-align: center;
+}
+
+.socials-top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-hidden {
   overflow: hidden;
   background-color: rgba(59, 24, 30, 1);
@@ -41,5 +60,36 @@ h1, h2, h3, h4, h5, h6, p {
 
 .floristics {
   padding: 145px 40px 40px 40px;
-  background: url(img/flowers.jpg)
+  background: url(img/flowers.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.services {
+  padding: 100px 15px 50px 15px;
+}
+
+.promo {
+  padding: 50px 15px 115px;
+}
+
+.promo__composition {
+  width: 100%;
+}
+
+.footer-nav__items {
+  display: grid;
+  padding: 30px 50px 20px;
+}
+
+.socials-footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 35px;
+}
+
+.socials__item {
+  text-decoration: none
 }
