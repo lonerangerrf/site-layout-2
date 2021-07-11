@@ -11,7 +11,7 @@ body {
   font-family: 'Forum', cursive;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, span {
   margin: 0 auto;
   color: #FFFFFF;
 }
@@ -63,6 +63,7 @@ ul {
   background: url(img/flowers.jpg);
   background-position: 50% 50%;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .services {
