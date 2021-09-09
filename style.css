@@ -18,9 +18,9 @@ ul {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px 20px 30px;
 }
 
 .logo {
@@ -57,8 +57,14 @@ ul {
   font-size: 30px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0,09em;
+  letter-spacing: 0.09em;
   margin-bottom: 35px;
+}
+
+.button_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -67,12 +73,13 @@ ul {
   height: 50px;
   border: 1px solid #FFFFFF;
   font-size: 10px;
-  letter-spacing: 0,15em;
+  letter-spacing: 0.15em;
   line-height: 11px;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin-left: 30px;
-  margin-bottom: 70px;
+  
+  /* margin-left: 30px;
+  margin-bottom: 70px; */
 }
 
 .socials-top {
@@ -92,8 +99,9 @@ ul {
   display: none;
 }
 
-.arrow-bottom {
-  margin-left: 115px;
+.arrow-bottom-wraper {
+  display: flex;
+  justify-content: center;
 }
 
 .svg-mouse {
@@ -256,7 +264,12 @@ ul {
 @media screen and (min-width: 768px) {
 
   .header {
-    padding: 50px 50px 50px 50px;
+    width: 668px;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
   }
 
   .logo__svg {
@@ -277,29 +290,17 @@ ul {
     display: none;
   }
 
-  .header, .floristics {
-    background-image: url(img/768/flowers-ipad.jpg);
-
-  /* .header, .floristics {
-  background: url(img/768/flowers-ipad.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: contain;
-  overflow-x: hidden;
-  } нашёл только этот варик, другого мне ничего не попалось*/
-
-  }
-
   .floristics {
-    padding: 195 100 55 100;
+    /* height: 1024px; */
+    padding: 330px 100px 140px 100px;
+    background-image: url(img/768/flowers-ipad.jpg);
   }
 
   .floristics__title {
     font-size: 70px;
     line-height: 77px;
     font-weight: 400;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
   }
 
   .floristics__br-second {
@@ -315,16 +316,18 @@ ul {
     height: 60px;
     font-size: 15px;
     line-height: 17px;
-    margin-left: 200px;
+    margin-bottom: 220px;
   }
 
   .socials-top {
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 0px 70px;
+    /* margin-left: 150px;
+    margin-right: 150px; */
   }
 
-  .arrow-bottom {
-    margin-left: 340px;
+  .arrow-bottom-wraper {
+    display: flex;
+    justify-content: center;
   }
 
   .services {
