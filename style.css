@@ -478,6 +478,18 @@ border: 1px solid white;
   }
 }
 
+@media screen and (min-width: 1440px) {
+
+  .header {
+    width: 1300px;
+  }
+
+  .slider__slide-3 {
+    display: block;
+  }
+
+}
+
 @media screen and (min-width: 1920px) {
 
   body {
